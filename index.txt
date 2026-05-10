@@ -23,8 +23,8 @@ Sacramento, California, USA
 # navbar
 
 About
-Resume
-Portfolio
+CV
+Profile
 Blog
 Contact
 
@@ -32,10 +32,23 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
+I'm Luyi Lin(林路易). You can also call me "speedlast".
 
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+Generally, I'm working in AI, struggling to be a care-free engineer and a good-taste researcher.
 
+I care about definitions, real-world problems, solid work and the synergy between system engineering and algorithmic innovation. Recently, my focus has been around: 
+
+- Foundation Models: I'm extremely interested in exploring the architecture design and training algorithm of foundation models, validating scaling laws and pushing the boundaries of AI, however small the contribution is.
+
+- AI Infrastructure & Hardware-aware algorithms: I believe that pure system work risks "labor stacking" without algorithmic insights, while pure algorithm work risks "disfalsification" in large-scale scenarios without hardware efficiency.
+
+- AI for math: Trying to solve open questions that have puzzled mathematicians for decades or even centuries would be fun.
+
+Beyond research and work, I cherish individual independence and dignity, traversing existential struggles with a lifelong quest for love and freedom.
+
+On Loyalty: Ride or Die. Through thick and thin.
+
+**就此拜过昭烈武侯**。
 
 ## service
 
@@ -87,9 +100,9 @@ alt = client logo
 
 
 
-# resume
+# CV
 
-Resume
+CV
 
 Education
 
@@ -132,9 +145,9 @@ WordPress
 
 
 
-# portfolio
+# profile
 
-Portfolio
+Profile
 
 All
 Web design
