@@ -1268,7 +1268,7 @@ main {
   border: none;
   display: flex;
   align-items: center;
-  gap: 18px;
+  justify-content: center;
   min-height: 138px;
 }
 
@@ -1279,11 +1279,10 @@ main {
 .utopia-card-head {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
   margin-bottom: 0;
-  flex-shrink: 0;
-  width: 110px;
+  text-align: center;
 }
 
 .utopia-card-icon {
@@ -1301,15 +1300,6 @@ main {
   --ionicon-stroke-width: 38px;
 }
 
-.utopia-content-box {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%;
-  flex: 1;
-}
-
 .utopia-card-kicker {
   color: var(--vegas-gold);
   font-size: var(--fs-8);
@@ -1317,13 +1307,6 @@ main {
   text-transform: uppercase;
   margin-bottom: 0;
   line-height: 1.45;
-}
-
-.utopia-card-title {
-  color: var(--white-2);
-  font-size: var(--fs-5);
-  line-height: 1.35;
-  margin-bottom: 0;
 }
 
 .utopia-quote {
@@ -1338,14 +1321,6 @@ main {
   line-height: 1.8;
   font-style: italic;
 }
-
-@media (min-width: 580px) {
-  .utopia-content-box { text-align: center; }
-}
-
-
-
-
 
 /*-----------------------------------*\
   #CONTACT
