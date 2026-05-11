@@ -1206,6 +1206,126 @@ main {
 
 
 /*-----------------------------------*\
+  #UTOPIA
+\*-----------------------------------*/
+
+.utopia-hero {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 26px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.utopia-hero::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.utopia-eyebrow {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.utopia-hero-title {
+  color: var(--white-2);
+  font-size: var(--fs-3);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.utopia-hero-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+}
+
+.utopia-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.utopia-card {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.utopia-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-2);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.utopia-card-icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: var(--onyx);
+  color: var(--orange-yellow-crayola);
+  font-size: 20px;
+}
+
+.utopia-card-kicker {
+  color: var(--vegas-gold);
+  font-size: var(--fs-8);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.utopia-card-title {
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.utopia-card-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.65;
+}
+
+.utopia-quote {
+  margin-top: 20px;
+  padding-left: 16px;
+  border-left: 2px solid var(--orange-yellow-crayola);
+}
+
+.utopia-quote blockquote {
+  color: var(--light-gray);
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  font-style: italic;
+}
+
+
+
+
+
+/*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/
 
@@ -1600,6 +1720,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 25px; }
 
+  /**
+   * #UTOPIA
+   */
+
+  .utopia-hero { padding: 30px; }
+
+  .utopia-grid { gap: 20px; }
+
+  .utopia-card { padding: 24px; }
+
 
 
   /**
@@ -1713,6 +1843,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* project and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+
+  /**
+   * UTOPIA
+   */
+
+  .utopia-grid { grid-template-columns: 1fr 1fr; }
+
+  .utopia-card:first-child { grid-column: 1 / -1; }
 
 
 
@@ -1841,6 +1979,14 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .blog-banner-box { height: 230px; }
+
+  /**
+   * UTOPIA
+   */
+
+  .utopia-grid { grid-template-columns: repeat(3, 1fr); }
+
+  .utopia-card:first-child { grid-column: auto; }
 
 }
 
