@@ -780,7 +780,7 @@ main {
 .interests-list {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
@@ -796,13 +796,21 @@ main {
   flex: 0 0 50%;
   min-width: 0;
   scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  min-height: 140px;
 }
 
 .interests-item img {
-  width: 100%;
+  width: auto;
   max-width: 100%;
+  max-height: 140px;
   height: auto;
   display: block;
+  object-fit: contain;
+  object-position: center;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1264,10 +1272,17 @@ main {
   margin-bottom: 24px;
 }
 
-.utopia-card {
-  border: none;
+/* 必须高于 .service-item，否则 ≥580px 时会被 service 的 flex 布局覆盖 */
+.service-item.utopia-card {
   display: grid;
   place-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.utopia-card {
+  border: none;
   min-height: 138px;
   padding-block: 26px;
 }
@@ -1310,10 +1325,40 @@ main {
   line-height: 1.45;
 }
 
+.service-item.utopia-card > .utopia-card-link {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 138px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: inherit;
+}
+
+.service-item.utopia-card > .utopia-card-link:focus-visible {
+  outline: 2px solid var(--orange-yellow-crayola);
+  outline-offset: 3px;
+}
+
+.service-item.utopia-card .utopia-card-link:hover .utopia-card-kicker {
+  color: var(--orange-yellow-crayola);
+}
+
+.utopia .skills-list.content-card {
+  cursor: default;
+}
+
 @media (min-width: 580px) {
-  .utopia-card {
+  .service-item.utopia-card {
     display: grid;
     place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .service-item.utopia-card .service-icon-box.utopia-card-icon {
+    margin-top: 0;
   }
 }
 
@@ -1609,6 +1654,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     align-items: flex-start;
     gap: 18px;
     padding: 30px;
+  }
+
+  /* Utopia 复用 service-item 样式，但不要用 About 里的横向 flex，否则内容会挤在左侧 */
+  .service-item.utopia-card {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .service-item.utopia-card .service-icon-box.utopia-card-icon {
+    margin-top: 0;
   }
 
   .service-icon-box {
@@ -2122,4 +2180,50 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+
+
+/*-----------------------------------*\
+  #SIMPLE SUBPAGES (utopia/*, blog/*)
+\*-----------------------------------*/
+
+body.subpage {
+  min-height: 100vh;
+  padding: clamp(24px, 4vw, 48px);
+}
+
+.subpage-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.subpage-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
+
+.subpage-back:hover { text-decoration: underline; }
+
+.subpage-crumb {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  margin-bottom: 12px;
+}
+
+.subpage-title {
+  color: var(--white-2);
+  font-size: var(--fs-1);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.subpage-lead {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.7;
+  margin-bottom: 12px;
 }

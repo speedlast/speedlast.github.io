@@ -29,6 +29,7 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
+  if (!modalContainer || !overlay) { return; }
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
@@ -37,6 +38,8 @@ const testimonialsModalFunc = function () {
 for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
+
+    if (!modalImg || !modalTitle || !modalText) { return; }
 
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
@@ -50,8 +53,13 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 }
 
 // add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+}
+
+if (overlay) {
+  overlay.addEventListener("click", testimonialsModalFunc);
+}
 
 
 
@@ -82,9 +90,11 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
+    const itemCategory = (filterItems[i].dataset.category || "").toLowerCase();
+
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else if (selectedValue === itemCategory) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
