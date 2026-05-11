@@ -1270,6 +1270,7 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 138px;
+  padding-block: 26px;
 }
 
 .utopia-card::before {
@@ -1283,6 +1284,7 @@ main {
   gap: 8px;
   margin-bottom: 0;
   text-align: center;
+  justify-content: center;
 }
 
 .utopia-card-icon {
@@ -1307,6 +1309,13 @@ main {
   text-transform: uppercase;
   margin-bottom: 0;
   line-height: 1.45;
+}
+
+@media (min-width: 580px) {
+  .utopia-card {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .utopia-quote {
