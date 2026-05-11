@@ -1278,10 +1278,12 @@ main {
 
 .utopia-card-head {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   margin-bottom: 0;
   flex-shrink: 0;
+  width: 110px;
 }
 
 .utopia-card-icon {
@@ -1300,10 +1302,12 @@ main {
 }
 
 .utopia-content-box {
-  text-align: left;
+  text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100%;
+  flex: 1;
 }
 
 .utopia-card-kicker {
@@ -1312,6 +1316,7 @@ main {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-bottom: 0;
+  line-height: 1.45;
 }
 
 .utopia-card-title {
@@ -1335,7 +1340,7 @@ main {
 }
 
 @media (min-width: 580px) {
-  .utopia-content-box { text-align: left; }
+  .utopia-content-box { text-align: center; }
 }
 
 
