@@ -1216,6 +1216,7 @@ main {
   padding: 24px;
   margin-bottom: 26px;
   box-shadow: var(--shadow-2);
+  border: 1px solid var(--jet);
   z-index: 1;
 }
 
@@ -1245,9 +1246,15 @@ main {
 }
 
 .utopia-hero-text {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: var(--fs-6);
   line-height: 1.7;
+  opacity: 0.92;
+}
+
+.utopia-topics {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .utopia-grid {
@@ -1263,6 +1270,7 @@ main {
   border-radius: 14px;
   padding: 20px;
   box-shadow: var(--shadow-2);
+  border: 1px solid var(--jet);
   z-index: 1;
 }
 
@@ -1270,7 +1278,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--eerie-black-2);
+  background: hsl(240, 2%, 14%);
   border-radius: inherit;
   z-index: -1;
 }
@@ -1292,7 +1300,7 @@ main {
   font-size: var(--fs-8);
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .utopia-card-title {
@@ -1303,13 +1311,14 @@ main {
 }
 
 .utopia-card-text {
-  color: var(--light-gray);
+  color: var(--white-2);
   font-size: var(--fs-6);
   line-height: 1.65;
+  opacity: 0.88;
 }
 
 .utopia-quote {
-  margin-top: 20px;
+  margin-top: 32px;
   padding-left: 16px;
   border-left: 2px solid var(--orange-yellow-crayola);
 }
