@@ -1266,6 +1266,10 @@ main {
 
 .utopia-card {
   border: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 138px;
 }
 
 .utopia-card::before {
@@ -1276,7 +1280,8 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 
 .utopia-card-icon {
@@ -1295,7 +1300,10 @@ main {
 }
 
 .utopia-content-box {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  min-height: 100%;
 }
 
 .utopia-card-kicker {
