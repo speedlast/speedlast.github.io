@@ -1266,9 +1266,8 @@ main {
 
 .utopia-card {
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   min-height: 138px;
   padding-block: 26px;
 }
@@ -1313,8 +1312,8 @@ main {
 
 @media (min-width: 580px) {
   .utopia-card {
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
   }
 }
 
