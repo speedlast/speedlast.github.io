@@ -155,7 +155,21 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--smoky-black);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: soft-light;
+}
 
 
 
@@ -280,6 +294,8 @@ article.active {
   border-radius: 14px;
   box-shadow: var(--shadow-2);
   cursor: pointer;
+  overflow: hidden;
+  transition: box-shadow var(--transition-1), background var(--transition-1);
   z-index: 1;
 }
 
@@ -289,7 +305,12 @@ article.active {
   inset: 1px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
+  pointer-events: none;
   z-index: -1;
+}
+
+.content-card:hover {
+  box-shadow: var(--shadow-2), 0 0 30px hsla(45, 100%, 72%, 0.055);
 }
 
 
@@ -577,6 +598,8 @@ main {
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
+  overflow: hidden;
+  transition: box-shadow var(--transition-1), background var(--transition-1);
   z-index: 1;
 }
 
@@ -586,7 +609,12 @@ main {
   inset: 1px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
+  pointer-events: none;
   z-index: -1;
+}
+
+.service-item:hover {
+  box-shadow: var(--shadow-2), 0 0 28px hsla(45, 100%, 72%, 0.05);
 }
 
 .service-icon-box { margin-bottom: 10px; }
@@ -1055,6 +1083,7 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  transition: box-shadow var(--transition-1);
 }
 
 .project-img::before {
@@ -1104,6 +1133,10 @@ main {
 
 .project-item > a:hover img { transform: scale(1.1); }
 
+.project-item > a:hover .project-img {
+  box-shadow: 0 0 28px hsla(45, 100%, 72%, 0.05);
+}
+
 .project-title,
 .project-category { margin-left: 10px; }
 
@@ -1143,6 +1176,8 @@ main {
   height: 100%;
   box-shadow: var(--shadow-4);
   border-radius: 16px;
+  overflow: hidden;
+  transition: box-shadow var(--transition-1);
   z-index: 1;
 }
 
@@ -1152,6 +1187,7 @@ main {
   inset: 1px;
   border-radius: inherit;
   background: var(--eerie-black-1);
+  pointer-events: none;
   z-index: -1;
 }
 
@@ -1170,6 +1206,10 @@ main {
 }
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+
+.blog-post-item > a:hover {
+  box-shadow: var(--shadow-4), 0 0 28px hsla(45, 100%, 72%, 0.05);
+}
 
 .blog-content { padding: 15px; }
 
@@ -1240,7 +1280,7 @@ main {
 .utopia-eyebrow {
   color: var(--orange-yellow-crayola);
   font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-800);
   letter-spacing: 0.8px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -1346,6 +1386,75 @@ main {
 
 .utopia .skills-list.content-card {
   cursor: default;
+}
+
+.utopia .skills-list.content-card {
+  padding-block: 22px;
+}
+
+.utopia .skills-item:not(:last-child),
+.film-canon-item:not(:last-child) {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.045);
+}
+
+.utopia .skill .title-wrapper {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.utopia .skill .title-wrapper .h5 {
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.film-score {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  line-height: 1.35;
+  margin-bottom: 7px;
+  opacity: 0.72;
+}
+
+.film-director {
+  color: var(--white-2);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  line-height: 1.35;
+  margin-bottom: 7px;
+  opacity: 0.86;
+}
+
+.film-note {
+  color: var(--light-gray-70);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.65;
+  opacity: 0.72;
+}
+
+.film-note + .film-note {
+  margin-top: 8px;
+}
+
+.film-canon {
+  margin-top: 28px;
+}
+
+.film-canon-list {
+  padding-block: 22px;
+  cursor: default;
+}
+
+.utopia-card:hover,
+.utopia .skills-list.content-card:hover,
+.film-canon-list.content-card:hover {
+  box-shadow: var(--shadow-2), 0 0 34px hsla(45, 100%, 72%, 0.06);
 }
 
 @media (min-width: 580px) {
