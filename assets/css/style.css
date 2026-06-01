@@ -2160,24 +2160,12 @@ textarea.form-input::-webkit-resizer { display: none; }
    * RESET
    */
 
-  html {
-    scrollbar-color: hsla(0, 0%, 100%, 0.16) var(--smoky-black);
-    scrollbar-width: thin;
+  html { scrollbar-width: none; }
+
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
-
-  body::-webkit-scrollbar { width: 10px; }
-
-  body::-webkit-scrollbar-track { background: var(--smoky-black); }
-
-  body::-webkit-scrollbar-thumb {
-    border: 3px solid var(--smoky-black);
-    background: hsla(0, 0%, 100%, 0.14);
-    border-radius: 20px;
-  }
-
-  body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.22); }
-
-  body::-webkit-scrollbar-button { display: none; }
 
 
 
