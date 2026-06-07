@@ -2291,6 +2291,28 @@ body.blog-essay-page {
   color: #11100d;
   font-family: Georgia, "Times New Roman", serif;
   padding: clamp(22px, 4vw, 52px);
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: #9f9a8f #ece8dc;
+}
+
+html:has(body.blog-essay-page) {
+  scrollbar-width: auto;
+}
+
+body.blog-essay-page::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+body.blog-essay-page::-webkit-scrollbar-track {
+  background: #ece8dc;
+}
+
+body.blog-essay-page::-webkit-scrollbar-thumb {
+  background: #aaa397;
+  border: 3px solid #ece8dc;
+  border-radius: 999px;
 }
 
 .blog-essay-wrap {
