@@ -2332,7 +2332,7 @@ body.blog-essay-page {
 }
 
 .blog-essay-header {
-  margin-bottom: clamp(28px, 5vw, 42px);
+  margin-bottom: clamp(34px, 5vw, 54px);
   text-align: center;
 }
 
@@ -2425,16 +2425,20 @@ body.blog-essay-page {
 .blog-essay-content h3 {
   color: #11100d;
   font-weight: 400;
-  line-height: 1.2;
-  margin: 2em 0 0.75em;
+  line-height: 1.25;
+  margin: 2.2em 0 0.8em;
 }
 
 .blog-essay-content h2 {
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: clamp(25px, 2.6vw, 32px);
+}
+
+.blog-essay-content h2:first-of-type {
+  margin-top: 1.8em;
 }
 
 .blog-essay-content h3 {
-  font-size: clamp(24px, 3vw, 32px);
+  font-size: clamp(22px, 2.2vw, 27px);
 }
 
 .blog-essay-content a {
