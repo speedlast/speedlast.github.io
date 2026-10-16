@@ -93,6 +93,11 @@ h6 {
   letter-spacing: -0.012em;
 }
 
+.publications .author > em {
+  font-style: normal;
+  font-weight: 700;
+}
+
 .navbar {
   border-bottom: 1px solid var(--global-divider-color);
   background: color-mix(in srgb, var(--global-bg-color) 92%, transparent);
