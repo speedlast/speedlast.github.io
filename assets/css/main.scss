@@ -98,6 +98,45 @@ h6 {
   font-weight: 700;
 }
 
+.language-switch {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin: 0 0 1.75rem;
+  padding: 0.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  line-height: 1;
+
+  a {
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    color: var(--global-text-color-light);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus-visible {
+    background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+    color: var(--global-theme-color);
+  }
+
+  a.active {
+    background: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+    font-weight: 650;
+  }
+}
+
+.post-language-en {
+  p:has(> em:only-child),
+  li:has(> em:only-child),
+  ol:has(> li > em:only-child) {
+    display: none;
+  }
+}
+
 .navbar {
   border-bottom: 1px solid var(--global-divider-color);
   background: color-mix(in srgb, var(--global-bg-color) 92%, transparent);

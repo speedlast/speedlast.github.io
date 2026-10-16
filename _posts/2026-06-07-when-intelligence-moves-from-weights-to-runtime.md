@@ -11,6 +11,13 @@ toc:
   sidebar: left
 ---
 
+<nav class="language-switch" aria-label="Article language">
+  <a class="active" href="/blog/when-intelligence-moves-from-weights-to-runtime/" aria-current="page">English</a>
+  <a href="/blog/when-intelligence-moves-from-weights-to-runtime/zh/">中文</a>
+</nav>
+
+<div class="post-language post-language-en">
+
 This blog generally talks about agent and offers some not-that-new perspectives.
 
 **Key words:** Agent, Reasoning, Language, Runtime, Model Evaluation, Interaction
@@ -77,7 +84,7 @@ The runtime does not merely wrap the model. It reorganizes inference into an int
 
 _Runtime 不只是把模型包起来，它把 inference 重新组织成了一个交互过程。至此，智能不再只是被压缩在模型权重里，它的一部分在 runtime 中被展开。_
 
-## Boundary between Models and Runtime becomes vague 模型与运行时的边界变得模糊
+## Boundary between Models and Runtime Becomes Vague
 
 Agent system have turned intelligence into a product by unfolding it through runtime, bringing it closer to users. This has created enormous commercial value for companies like Anthropic and Google. But it also raises a question:
 
@@ -111,7 +118,7 @@ Benchmark scores can still be useful, but they are not enough. What matters more
 
 _评测上的分数当然仍然有用，但它们是不够的。更重要的是，这个 agent system 在真实场景中是否变得更可靠、更稳定、也更有用。_
 
-## Reasoning is Unfolded through Trajectories 推理是通过轨迹展开的
+## Reasoning Is Unfolded through Trajectories
 
 Around the same period that agents became widely discussed in the LLM community, OpenAI’s o1 pushed another word into the mainstream: reasoning. Both of them are about what happens when model output is no longer treated as a single final answer.
 
@@ -181,7 +188,7 @@ Sometimes I even wonder whether any of these works will have history-class impac
 
 _有时候我甚至会怀疑，这些工作里究竟有多少能留下 history-class impact。更多时候，能在短期内制造 world-class impact，就已经被认为足够成功。我个人不喜欢这种氛围。_
 
-## When Intelligence Moves from Weights to Runtime 当智能发生在运行时
+## When Intelligence Moves from Weights to Runtime
 
 Reasoning is unfolded through trajectories. Trajectories happen in interactions.
 
@@ -203,7 +210,7 @@ It's an open question.
 
 _这是个开放问题。_
 
-## Epilogue 结语
+## Epilogue
 
 Today happens to be the first day of Gaokao (China’s national college entrance examination). During university, I have often recalled certain scenes from high school. One of them is a lecture given by a professor from ZJU. I remember asking him whether sensors implanted into the skin would affect the primacy of human perception. He replied that it was a philosophical question. Then a few months, or perhaps a year later, ChatGPT appeared and astonished the world. Representation learning, supported by scaling in compute and data, suddenly revealed an amazing amount of intelligence. After entering University, I have spent much of my time wandering inside the world of representations. But sometimes I still return to the same question I asked in high school: after we compress the world into representations, do we lose something about the primacy of perception
 
@@ -212,3 +219,5 @@ _今天恰好是高考第一天，大学期间，我也经常会回想起我在�
 Intuitively, I feel that the primacy of perception may give rise to a more complete form of intelligence. The world is not only something to be represented. It is also something to be encountered. Yes, by that I mean, the world will reveal itself through interaction.
 
 _我直觉上认为，感知的第一性会建立起更完整的智能。世界不只是被表示的，它也是在交互中被“发生”的。是的，我是在说，世界会通过交互建立起它自己。_
+
+</div>

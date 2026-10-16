@@ -33,9 +33,11 @@ latest_posts:
   limit: 3
 ---
 
-I'm **Luyi Lin (林路易)**. You can also call me **speedlast**.
+Hi! I’m **Luyi Lin (林路易)**. You can also call me **speedlast**.
 
-I am an undergraduate student at Beijing Jiaotong University, working in AI and striving to become a care-free engineer and a researcher with good taste.
+I am an undergraduate student in Mathematics and Statistics at [Beijing Jiaotong University](https://en.bjtu.edu.cn/) and currently a research intern at [SLAI](https://www.slai.edu.cn/en/home?enterprise_mode=0), mentored by [Professor Congliang Chen](https://chcoliang.github.io/). Previously, I was a research intern at [Peking University](https://english.pku.edu.cn/), where I worked on large-scale training systems advised by [Prof. Bin Cui](https://cuibinpku.github.io/).
+
+In September 2027, I will join [Prof. Zhi-Quan (Tom) Luo's](https://tomluo123.github.io/) research group as a Ph.D. student.
 
 I care about definitions, real-world problems, solid work, and the synergy between system engineering and algorithmic innovation.
 
@@ -45,7 +47,9 @@ My research focus is around:
 - **Hardware-aware Algorithms**
 - **AI Infrastructure**
 
-Beyond research and work, I cherish individual independence and dignity, traversing existential struggles with a lifelong quest for love and freedom.
+Beyond research and work, I cherish **individual independence and dignity**, and aspire to a life devoted to the pursuit of **love and freedom**.
+
+Life is too short to be ordinary, yet for most people, survival itself is a lifelong struggle.
 
 ## Interests
 
