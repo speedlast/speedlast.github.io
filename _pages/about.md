@@ -35,7 +35,7 @@ latest_posts:
 
 Hi! I’m **Luyi Lin (林路易)**. You can also call me **speedlast**.
 
-I am an undergraduate student in Mathematics and Statistics at [Beijing Jiaotong University](https://en.bjtu.edu.cn/) and currently a research intern at [SLAI](https://www.slai.edu.cn/en/home?enterprise_mode=0), mentored by [Professor Congliang Chen](https://chcoliang.github.io/). Previously, I was a research intern at [Peking University](https://english.pku.edu.cn/), where I worked on large-scale training systems advised by [Prof. Bin Cui](https://cuibinpku.github.io/).
+I am an undergraduate student in Mathematics and Statistics at <span class="institution-link"><img src="{{ '/assets/img/emblem-bjtu.png' | relative_url }}" alt="" aria-hidden="true"> <a href="https://en.bjtu.edu.cn/">Beijing Jiaotong University</a></span> and currently a research intern at [SLAI](https://www.slai.edu.cn/en/home?enterprise_mode=0), mentored by [Prof. Congliang Chen](https://chcoliang.github.io/). Previously, I was a research intern at <span class="institution-link"><img src="{{ '/assets/img/emblem-pku.png' | relative_url }}" alt="" aria-hidden="true"> <a href="https://english.pku.edu.cn/">Peking University</a></span>, where I worked on large-scale training systems advised by [Prof. Bin Cui](https://cuibinpku.github.io/).
 
 In September 2027, I will join [Prof. Zhi-Quan (Tom) Luo's](https://tomluo123.github.io/) research group as a Ph.D. student.
 
