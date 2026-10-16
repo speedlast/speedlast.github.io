@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate Student @ BJTU · Research Intern @ PKU DAIR Lab
+subtitle: Undergraduate Student @ BJTU | Research Intern @ PKU DAIR Lab
 
 profile:
   align: right
