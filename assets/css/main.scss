@@ -134,24 +134,33 @@ blockquote {
 
   .more-info {
     margin-top: 1.1rem;
+    width: 100%;
     text-align: center;
   }
 }
 
 .profile-affiliation {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.15rem;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.35;
+  text-align: center;
 
   strong {
-    font-size: 0.9rem;
+    display: block;
+    font-size: 0.78rem;
     font-weight: 650;
+    white-space: nowrap;
   }
 
   span {
+    display: block;
     color: var(--global-text-color-light);
-    font-size: 0.76rem;
+    font-size: 0.72rem;
+    white-space: nowrap;
   }
 }
 
@@ -161,6 +170,7 @@ blockquote {
   align-items: center;
   gap: 0.65rem;
   margin-top: 0.8rem;
+  width: 100%;
   color: var(--global-text-color);
   font-size: 1.2rem;
   line-height: 1;
