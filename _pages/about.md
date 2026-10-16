@@ -39,11 +39,11 @@ I am an undergraduate student at Beijing Jiaotong University, working in AI and 
 
 I care about definitions, real-world problems, solid work, and the synergy between system engineering and algorithmic innovation.
 
-## Research focus
+My research focus is around:
 
-- **Foundation Models** — understanding, scaling, and aligning foundation models toward real-world intelligence.
-- **AI Infrastructure** — efficient training, serving, and system design for next-generation AI.
-- **Hardware-aware Algorithms** — bridging algorithms and hardware for more efficient and scalable AI systems.
+- **Foundation Models**
+- **Hardware-aware Algorithms**
+- **AI Infrastructure**
 
 Beyond research and work, I cherish individual independence and dignity, traversing existential struggles with a lifelong quest for love and freedom.
 
