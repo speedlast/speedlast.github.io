@@ -84,6 +84,15 @@ button,
   letter-spacing: -0.025em;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.012em;
+}
+
 .navbar {
   border-bottom: 1px solid var(--global-divider-color);
   background: color-mix(in srgb, var(--global-bg-color) 92%, transparent);
