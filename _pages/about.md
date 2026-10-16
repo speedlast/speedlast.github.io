@@ -38,23 +38,10 @@ I care about definitions, real-world problems, solid work, and the synergy betwe
 
 Beyond research and work, I cherish individual independence and dignity, traversing existential struggles with a lifelong quest for love and freedom.
 
-> On Loyalty: Ride or Die. Through thick and thin.
->
-> 就此拜过昭烈武侯。
-
 ## Interests
 
-Football—especially Lamine Yamal—and the mountains.
+I love **football** (mostly watching, though I've been trying to play a little myself). I've been a fan of **Lamine Yamal** for a long time. I'm also into movies and music.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; align-items: center; text-align: center">
-  <figure>
-    <img src="{{ '/assets/img/interest-yamal.png' | relative_url }}" alt="Lamine Yamal in an FC Barcelona shirt" style="width: 100%; height: 240px; object-fit: contain">
-    <figcaption>Lamine Yamal</figcaption>
-  </figure>
-  <figure>
-    <img src="{{ '/assets/img/interest-mountains.png' | relative_url }}" alt="Mountain illustration" style="width: 100%; height: 160px; object-fit: contain">
-    <figcaption>Mountains</figcaption>
-  </figure>
-</div>
+Interestingly, I've been reading philosophical gossip since high school, and somewhere along the way, I discovered a certain *jouissance* in **Lacanian psychoanalysis**.
 
-You can also find me on [Xiaohongshu](https://www.xiaohongshu.com/user/profile/649d5a5b000000001003648b).
+And above all, I love **mountains**. I cherish those moments that make me feel real and alive.
