@@ -6,8 +6,7 @@ title: Luyi Lin
 first_name: Luyi
 middle_name:
 last_name: Lin
-contact_note: >
-  Email is the best way to reach me.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Luyi Lin's personal website: AI systems, foundation models, hardware-aware algorithms, writing, and selected work.
 footer_text: >

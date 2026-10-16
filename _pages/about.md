@@ -8,12 +8,21 @@ profile:
   align: right
   image: prof_pic.png
   image_circular: true
-  more_info: >
-    <p>Haidian, Beijing, China</p>
-    <p>WeChat: to_the_ride_or_die</p>
+  more_info: |
+    <div class="profile-affiliation">
+      <strong>School of Mathematics and Statistics</strong>
+      <span>Beijing Jiaotong University</span>
+    </div>
+    <div class="profile-socials" aria-label="Contact links">
+      <a href="mailto:&#108;&#117;&#121;&#105;&#108;&#105;&#110;&#064;&#098;&#106;&#116;&#117;&#046;&#101;&#100;&#117;&#046;&#099;&#110;" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a href="https://scholar.google.com/citations?user=khzDC5IAAAAJ" aria-label="Google Scholar" title="Google Scholar"><i class="ai ai-google-scholar" aria-hidden="true"></i></a>
+      <a href="https://github.com/speedlast" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="/feed.xml" aria-label="RSS feed" title="RSS feed"><i class="fa-solid fa-rss" aria-hidden="true"></i></a>
+      <span class="profile-wechat" tabindex="0" role="img" aria-label="WeChat: to_the_ride_or_die" data-tooltip="WeChat: to_the_ride_or_die"><i class="fa-brands fa-weixin" aria-hidden="true"></i></span>
+    </div>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: false

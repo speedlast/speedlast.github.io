@@ -115,3 +115,104 @@ blockquote {
 ::selection {
   background: color-mix(in srgb, var(--global-theme-color) 25%, transparent);
 }
+
+/* Compact, centered profile details on the About page. */
+.profile {
+  width: 250px;
+  max-width: 38%;
+
+  img {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .more-info {
+    margin-top: 1.1rem;
+    text-align: center;
+  }
+}
+
+.profile-affiliation {
+  display: grid;
+  gap: 0.15rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.35;
+
+  strong {
+    font-size: 0.9rem;
+    font-weight: 650;
+  }
+
+  span {
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+  }
+}
+
+.profile-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 0.8rem;
+  color: var(--global-text-color);
+  font-size: 1.2rem;
+  line-height: 1;
+
+  a,
+  .profile-wechat {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    color: inherit;
+    cursor: pointer;
+    transition: color 160ms ease, background-color 160ms ease;
+  }
+
+  a:hover,
+  a:focus-visible,
+  .profile-wechat:hover,
+  .profile-wechat:focus-visible {
+    background: color-mix(in srgb, var(--global-theme-color) 11%, transparent);
+    color: var(--global-theme-color);
+  }
+}
+
+.profile-wechat::after {
+  position: absolute;
+  z-index: 5;
+  bottom: calc(100% + 0.45rem);
+  left: 50%;
+  width: max-content;
+  max-width: 15rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 0.3rem;
+  background: var(--global-text-color);
+  color: var(--global-bg-color);
+  content: attr(data-tooltip);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0.25rem);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.profile-wechat:hover::after,
+.profile-wechat:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 576px) {
+  .profile {
+    float: none !important;
+    width: 220px;
+    max-width: 72%;
+    margin: 0 auto 1.5rem;
+  }
+}
