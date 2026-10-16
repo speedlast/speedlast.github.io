@@ -2,33 +2,59 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Undergraduate Student @ BJTU · Research Intern @ PKU DAIR Lab
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.png
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Haidian, Beijing, China</p>
+    <p>WeChat: to_the_ride_or_die</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm **Luyi Lin (林路易)**. You can also call me **speedlast**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am an undergraduate student at Beijing Jiaotong University, working in AI and striving to become a care-free engineer and a researcher with good taste.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I care about definitions, real-world problems, solid work, and the synergy between system engineering and algorithmic innovation.
+
+## Research focus
+
+- **Foundation Models** — understanding, scaling, and aligning foundation models toward real-world intelligence.
+- **AI Infrastructure** — efficient training, serving, and system design for next-generation AI.
+- **Hardware-aware Algorithms** — bridging algorithms and hardware for more efficient and scalable AI systems.
+
+Beyond research and work, I cherish individual independence and dignity, traversing existential struggles with a lifelong quest for love and freedom.
+
+> On Loyalty: Ride or Die. Through thick and thin.
+>
+> 就此拜过昭烈武侯。
+
+## Interests
+
+Football—especially Lamine Yamal—and the mountains.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; align-items: center; text-align: center">
+  <figure>
+    <img src="{{ '/assets/img/interest-yamal.png' | relative_url }}" alt="Lamine Yamal in an FC Barcelona shirt" style="width: 100%; height: 240px; object-fit: contain">
+    <figcaption>Lamine Yamal</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/interest-mountains.png' | relative_url }}" alt="Mountain illustration" style="width: 100%; height: 160px; object-fit: contain">
+    <figcaption>Mountains</figcaption>
+  </figure>
+</div>
+
+You can also find me on [Xiaohongshu](https://www.xiaohongshu.com/user/profile/649d5a5b000000001003648b).
