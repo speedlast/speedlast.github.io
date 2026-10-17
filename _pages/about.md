@@ -28,7 +28,7 @@ announcements:
   enabled: false
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
@@ -51,10 +51,14 @@ Beyond research and work, I cherish **individual independence and dignity**, and
 
 Life is too short to be ordinary, yet for most people, survival itself is a lifelong struggle.
 
+## Latest Posts
+
+{% include latest_posts.liquid %}
+
 ## Selected Publications
 
-<div class="publications">
-{% bibliography --query @*[selected=true] %}
+<div class="home-selected-publications">
+{% include selected_papers.liquid %}
 </div>
 
 ## Other Interests
