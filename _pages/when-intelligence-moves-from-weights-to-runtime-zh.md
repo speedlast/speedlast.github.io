@@ -5,11 +5,9 @@ date: 2026-06-07 00:00:00 +0800
 description: 一篇关于 Agent 系统、推理与运行时结构的笔记。
 permalink: /blog/when-intelligence-moves-from-weights-to-runtime/zh/
 related_posts: false
-toc:
-  sidebar: left
 ---
 
-<article class="oldspeedlast-blog-essay">
+<article class="oldspeedlast-blog-essay" lang="zh-CN" markdown="1">
   <div class="oldspeedlast-blog-essay-topbar">
     <a class="oldspeedlast-blog-essay-back" href="{{ '/blog/' | relative_url }}">返回博客</a>
     <div class="oldspeedlast-blog-essay-actions">
@@ -27,13 +25,25 @@ toc:
     <p class="oldspeedlast-blog-essay-contact">luyilin@bjtu.edu.cn</p>
   </header>
 
-<div class="oldspeedlast-blog-essay-content post-language post-language-zh" lang="zh-CN">
+<div class="oldspeedlast-blog-essay-body" markdown="1">
+  <nav class="oldspeedlast-blog-toc" aria-label="文章大纲">
+    <p class="oldspeedlast-blog-toc-label">本文目录</p>
+    <ol>
+      <li><a href="#agent-stops-meaning-an-agent">Agent 不再意味着 Agent</a></li>
+      <li><a href="#boundary-between-models-and-runtime">模型与运行时的边界</a></li>
+      <li><a href="#reasoning-through-trajectories">推理与轨迹</a></li>
+      <li><a href="#intelligence-at-runtime">当智能发生在运行时</a></li>
+      <li><a href="#epilogue">结语</a></li>
+    </ol>
+  </nav>
+
+<div class="oldspeedlast-blog-essay-content post-language post-language-zh" lang="zh-CN" markdown="1">
 
 这篇文章主要讨论 Agent，并提供一些或许并不那么新的视角。
 
 **关键词：** Agent、推理、语言、运行时、模型评测、交互
 
-## Agent 不再意味着 Agent
+## Agent 不再意味着 Agent {#agent-stops-meaning-an-agent}
 
 我总是想找到一个起点，我赋予了起点一种本原的意义。这并不是说找到起点，就能理解一切了（尽管在有些时候是这样的），而是说，起点里蕴含着一种发生，我想去看看概念、定义是如何发生的。
 
@@ -65,7 +75,7 @@ Foundation model 提供了关于语言、代码和世界知识的先验。它也
 
 Runtime 不只是把模型包起来，它把 inference 重新组织成了一个交互过程。至此，智能不再只是被压缩在模型权重里，它的一部分在 runtime 中被展开。
 
-## 模型与运行时的边界变得模糊
+## 模型与运行时的边界变得模糊 {#boundary-between-models-and-runtime}
 
 Agent system 让智能通过 runtime 变成了产品，离用户更近。这为 Anthropic、Google 这些公司带来了惊天利润，但也带来了一个问题：
 
@@ -83,7 +93,7 @@ Agent system 让智能通过 runtime 变成了产品，离用户更近。这为 
 
 评测上的分数当然仍然有用，但它们是不够的。更重要的是，这个 agent system 在真实场景中是否变得更可靠、更稳定、也更有用。
 
-## 推理是通过轨迹展开的
+## 推理是通过轨迹展开的 {#reasoning-through-trajectories}
 
 与 Agent 爆火的几乎同时，OpenAI 的 o1 模型将另一个词推到了主流视野中：Reasoning。二者都在讨论：当模型输出不再被看作一次单独的最终答案时，会发生什么。
 
@@ -119,7 +129,7 @@ AI 并不是一个严谨的学科。我们不断制造各种光鲜的新术语�
 
 有时候我甚至会怀疑，这些工作里究竟有多少能留下 history-class impact。更多时候，能在短期内制造 world-class impact，就已经被认为足够成功。我个人不喜欢这种氛围。
 
-## 当智能发生在运行时
+## 当智能发生在运行时 {#intelligence-at-runtime}
 
 Reasoning 是通过轨迹展开的。轨迹发生在交互之中。
 
@@ -131,11 +141,12 @@ Reasoning 是通过轨迹展开的。轨迹发生在交互之中。
 
 这是个开放问题。
 
-## 结语
+## 结语 {#epilogue}
 
 今天恰好是高考第一天，大学期间，我也经常会回想起我在高中时的一些情境。我记得其中一幅情境是，有一次，学校邀请浙大的教授来讲座，我记得我向他提问：植入皮肤的传感器，是否会影响人的感知的第一性？那个教授表示这是个哲学问题。几个月，或者一年之后，ChatGPT 横空出世，震惊世界。表征学习在算力和数据的 scaling 下，展现出了惊人的智能。进入大学以后，我花了很多时间在 representation 的世界里兜转。但有时候，我仍然会回到高中时提出的那个问题：当我们把世界压缩成表征之后，我们是否也破坏了感知的第一性？
 
 我直觉上认为，感知的第一性会建立起更完整的智能。世界不只是被表示的，它也是在交互中被“发生”的。是的，我是在说，世界会通过交互建立起它自己。
 
+</div>
 </div>
 </article>
