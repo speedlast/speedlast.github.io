@@ -37,7 +37,7 @@ Hi! I’m **Luyi Lin (林路易)**. You can also call me **speedlast**.
 
 I am an undergraduate student in Mathematics and Statistics at <span class="institution-link"><img src="{{ '/assets/img/emblem-bjtu.png' | relative_url }}" alt="" aria-hidden="true"> <a href="https://en.bjtu.edu.cn/">Beijing Jiaotong University</a></span> and currently a research intern at [SLAI](https://www.slai.edu.cn/en/home?enterprise_mode=0), mentored by [Prof. Congliang Chen](https://chcoliang.github.io/). Previously, I was a research intern at <span class="institution-link"><img src="{{ '/assets/img/emblem-pku.png' | relative_url }}" alt="" aria-hidden="true"> <a href="https://english.pku.edu.cn/">Peking University</a></span>, where I worked on large-scale training systems advised by [Prof. Bin Cui](https://cuibinpku.github.io/).
 
-In September 2027, I will join [Prof. Zhi-Quan (Tom) Luo's](https://tomluo123.github.io/) research group at <span class="institution-link cuhksz-link"><span class="cuhksz-mark"><img src="{{ '/assets/img/emblem-cuhksz.png' | relative_url }}" alt="" aria-hidden="true"></span> CUHK(SZ)</span> as a Ph.D. student.
+In September 2027, I will join [Prof. Zhi-Quan (Tom) Luo's](https://tomluo123.github.io/) research group at <span class="institution-link cuhksz-link"><a href="https://www.cuhk.edu.cn/en/"><span class="cuhksz-mark"><img src="{{ '/assets/img/emblem-cuhksz.png' | relative_url }}" alt="" aria-hidden="true"></span> CUHK(SZ)</a></span> as a Ph.D. student.
 
 I care about definitions, real-world problems, solid work, and the synergy between system engineering and algorithmic innovation.
 

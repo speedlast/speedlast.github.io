@@ -303,6 +303,12 @@ blockquote {
   gap: 0.32em;
 }
 
+.cuhksz-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32em;
+}
+
 .cuhksz-mark {
   position: relative;
   display: inline-block;
@@ -1093,4 +1099,23 @@ body:has(.oldspeedlast-panel) .post-header {
   .oldspeedlast-utopia-grid > li:first-child {
     grid-column: auto;
   }
+}
+
+/* Keep every oldspeedlast frame flat inside; its depth lives outside the edge. */
+.oldspeedlast-panel,
+.oldspeedlast-icon-box,
+.oldspeedlast-utopia-hero,
+.oldspeedlast-utopia-grid > li,
+.oldspeedlast-content-card {
+  background: var(--old-surface-deep);
+  box-shadow:
+    0 0 0 1px var(--old-line),
+    0 0 18px color-mix(in srgb, var(--old-heading) 11%, transparent);
+}
+
+.oldspeedlast-utopia-grid > li:hover,
+.oldspeedlast-content-card:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--old-accent) 45%, var(--old-line)),
+    0 0 24px color-mix(in srgb, var(--old-accent) 18%, transparent);
 }
