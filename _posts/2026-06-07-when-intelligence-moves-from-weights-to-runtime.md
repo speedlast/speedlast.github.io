@@ -12,11 +12,11 @@ toc:
 ---
 
 <nav class="language-switch" aria-label="Article language">
-  <a class="active" href="/blog/when-intelligence-moves-from-weights-to-runtime/" aria-current="page">English</a>
-  <a href="/blog/when-intelligence-moves-from-weights-to-runtime/zh/">中文</a>
+  <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en" aria-current="page">English</a>
+  <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN">中文</a>
 </nav>
 
-<div class="post-language post-language-en">
+<div class="post-language post-language-en" lang="en">
 
 This blog generally talks about agent and offers some not-that-new perspectives.
 

@@ -130,11 +130,93 @@ h6 {
   }
 }
 
+.post-language {
+  max-width: 46rem;
+  color: var(--global-text-color);
+  font-size: clamp(1rem, 0.97rem + 0.15vw, 1.08rem);
+  line-height: 1.86;
+  text-wrap: pretty;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0 0 1.35rem;
+  }
+
+  h2,
+  h3 {
+    color: var(--global-theme-color);
+    font-family: "Poppins", system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    margin: 3.25rem 0 1.1rem;
+    padding-bottom: 0.55rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    font-size: clamp(1.45rem, 1.25rem + 0.8vw, 1.9rem);
+  }
+
+  h3 {
+    margin: 2.4rem 0 0.8rem;
+    font-size: clamp(1.15rem, 1.05rem + 0.45vw, 1.4rem);
+  }
+
+  :is(ul, ol) {
+    margin: 0 0 1.45rem;
+    padding-left: 1.45rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+
+  blockquote {
+    margin: 1.8rem 0;
+    padding: 0.15rem 0 0.15rem 1.2rem;
+    border-left: 3px solid var(--global-theme-color);
+    color: var(--global-text-color-light);
+    font-size: 1.04em;
+  }
+
+  code {
+    padding: 0.1em 0.32em;
+    border-radius: 0.25rem;
+    background: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    color: var(--global-text-color);
+  }
+}
+
+.post-language-zh {
+  font-family: "Noto Serif SC", "Songti SC", STSong, SimSun, Georgia, serif;
+  letter-spacing: 0.015em;
+  line-break: strict;
+}
+
 .post-language-en {
-  p:has(> em:only-child),
-  li:has(> em:only-child),
-  ol:has(> li > em:only-child) {
+  font-family: Georgia, "Times New Roman", serif;
+
+  > p:has(> em:only-child),
+  > :is(ol, ul):has(> li > em:only-child) {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-language {
+    font-size: 1rem;
+    line-height: 1.8;
+
+    h2 {
+      margin-top: 2.7rem;
+    }
+
+    :is(ul, ol) {
+      padding-left: 1.2rem;
+    }
   }
 }
 

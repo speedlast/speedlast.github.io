@@ -29,17 +29,18 @@ nav_order: 5
   <section class="oldspeedlast-skill">
     <h3>The Last 5 Films I Watched</h3>
     <ul class="oldspeedlast-content-card">
+      <li><h5>The Odyssey</h5><p class="oldspeedlast-film-score">10.0 / 10.0</p></li>
+      <li><h5>Spider-Man: Brand New Day</h5><p class="oldspeedlast-film-score">8.0 / 10.0</p></li>
+      <li><h5>欢迎来龙餐馆</h5><p class="oldspeedlast-film-score">8.0 / 10.0</p></li>
       <li><h5>Memento（记忆碎片 重映）</h5><p class="oldspeedlast-film-score">8.7 / 10.0</p></li>
-      <li><h5>给阿嬷的情书（Dear You）</h5><p class="oldspeedlast-film-score">8.3 / 10.0 (I'd like to give a 10.0)</p></li>
-      <li><h5>Avatar 3</h5><p class="oldspeedlast-film-score">4.0 / 10.0</p></li>
-      <li><h5>Zootopia 2</h5><p class="oldspeedlast-film-score">7.3 / 10.0</p></li>
-      <li><h5>鬼灭之刃：无限城篇 第一章 猗窝座再袭</h5><p class="oldspeedlast-film-score">8.5 / 10.0</p></li>
+      <li><h5>给阿嬷的情书（Dear You）</h5><p class="oldspeedlast-film-score">9.0 / 10.0 (I'd like to give a 10.0)</p></li>
     </ul>
   </section>
 
   <section class="oldspeedlast-skill oldspeedlast-film-canon">
     <h3>The Films I Carry With Me</h3>
     <ul class="oldspeedlast-content-card">
+      <li><h5>The Odyssey（奥德赛）</h5><p class="oldspeedlast-film-director">Directed by Christopher Nolan</p><p class="oldspeedlast-film-score">10.0 / 10.0</p><p class="oldspeedlast-film-note">"You're a man who needs to control his fate. But you cannot control this. You must give yourself to the storm, give yourself to Poseidon. And take your punishment. Give up the fight, give up control and live. It is a leap of faith you haven't yet made, Odysseus."</p><p class="oldspeedlast-film-note">"We violated all that's ever sacred between people. It turned a fight into a hunt"</p></li>
       <li><h5>Interstellar（星际穿越）</h5><p class="oldspeedlast-film-score">10.0 / 10.0</p><p class="oldspeedlast-film-director">Directed by Christopher Nolan</p><p class="oldspeedlast-film-note">"Do not go gentle into that good night; Old age should burn and rave at close of day. Rage, rage against the dying of the light."</p></li>
       <li><h5>Stalker（潜行者）</h5><p class="oldspeedlast-film-score">9.5 / 10.0</p><p class="oldspeedlast-film-director">Directed by Andrei Tarkovsky</p><p class="oldspeedlast-film-note">"It is so quiet out here, it is the quietest place in the world."</p></li>
       <li><h5>Robot Dreams（机器人之梦）</h5><p class="oldspeedlast-film-score">10.0 / 10.0</p><p class="oldspeedlast-film-director">Directed by Pablo Berger</p><p class="oldspeedlast-film-note">Afraid you'll forget me. Afraid you'll always remember me.</p></li>

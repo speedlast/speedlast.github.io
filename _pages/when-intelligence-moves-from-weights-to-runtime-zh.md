@@ -10,9 +10,11 @@ toc:
 ---
 
 <nav class="language-switch" aria-label="文章语言">
-  <a href="/blog/when-intelligence-moves-from-weights-to-runtime/">English</a>
-  <a class="active" href="/blog/when-intelligence-moves-from-weights-to-runtime/zh/" aria-current="page">中文</a>
+  <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en">English</a>
+  <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN" aria-current="page">中文</a>
 </nav>
+
+<div class="post-language post-language-zh" lang="zh-CN">
 
 这篇文章主要讨论 Agent，并提供一些或许并不那么新的视角。
 
@@ -121,3 +123,5 @@ Reasoning 是通过轨迹展开的。轨迹发生在交互之中。
 今天恰好是高考第一天，大学期间，我也经常会回想起我在高中时的一些情境。我记得其中一幅情境是，有一次，学校邀请浙大的教授来讲座，我记得我向他提问：植入皮肤的传感器，是否会影响人的感知的第一性？那个教授表示这是个哲学问题。几个月，或者一年之后，ChatGPT 横空出世，震惊世界。表征学习在算力和数据的 scaling 下，展现出了惊人的智能。进入大学以后，我花了很多时间在 representation 的世界里兜转。但有时候，我仍然会回到高中时提出的那个问题：当我们把世界压缩成表征之后，我们是否也破坏了感知的第一性？
 
 我直觉上认为，感知的第一性会建立起更完整的智能。世界不只是被表示的，它也是在交互中被“发生”的。是的，我是在说，世界会通过交互建立起它自己。
+
+</div>

@@ -41,7 +41,7 @@ In September 2027, I will join [Prof. Zhi-Quan (Tom) Luo's](https://tomluo123.gi
 
 I care about definitions, real-world problems, solid work, and the synergy between system engineering and algorithmic innovation.
 
-My research focus is around:
+My Research Focus Is Around:
 
 - **Foundation Models**
 - **Hardware-aware Algorithms**
