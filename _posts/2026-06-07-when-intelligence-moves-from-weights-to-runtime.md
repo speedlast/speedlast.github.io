@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: When Intelligence Moves from Weights to Runtime
 date: 2026-06-07 00:00:00 +0800
 description: A note on agent systems, reasoning, and runtime structure.
@@ -11,12 +11,25 @@ toc:
   sidebar: left
 ---
 
-<nav class="language-switch" aria-label="Article language">
-  <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en" aria-current="page">English</a>
-  <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN">中文</a>
-</nav>
+<article class="oldspeedlast-blog-essay">
+  <div class="oldspeedlast-blog-essay-topbar">
+    <a class="oldspeedlast-blog-essay-back" href="{{ '/blog/' | relative_url }}">Back to blog</a>
+    <div class="oldspeedlast-blog-essay-actions">
+      <time class="oldspeedlast-blog-essay-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y.' }}</time>
+      <nav class="oldspeedlast-blog-language" aria-label="Article language">
+        <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en" aria-current="page">English</a>
+        <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN">中文</a>
+      </nav>
+    </div>
+  </div>
 
-<div class="post-language post-language-en" lang="en">
+  <header class="oldspeedlast-blog-essay-header">
+    <h1 class="oldspeedlast-blog-essay-title">{{ page.title }}</h1>
+    <p class="oldspeedlast-blog-essay-author">Luyi Lin</p>
+    <p class="oldspeedlast-blog-essay-contact">luyilin@bjtu.edu.cn</p>
+  </header>
+
+<div class="oldspeedlast-blog-essay-content post-language post-language-en" lang="en">
 
 This blog generally talks about agent and offers some not-that-new perspectives.
 
@@ -221,3 +234,4 @@ Intuitively, I feel that the primacy of perception may give rise to a more compl
 _我直觉上认为，感知的第一性会建立起更完整的智能。世界不只是被表示的，它也是在交互中被“发生”的。是的，我是在说，世界会通过交互建立起它自己。_
 
 </div>
+</article>

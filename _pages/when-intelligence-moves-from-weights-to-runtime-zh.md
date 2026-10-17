@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 当智能发生在运行时
 date: 2026-06-07 00:00:00 +0800
 description: 一篇关于 Agent 系统、推理与运行时结构的笔记。
@@ -9,12 +9,25 @@ toc:
   sidebar: left
 ---
 
-<nav class="language-switch" aria-label="文章语言">
-  <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en">English</a>
-  <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN" aria-current="page">中文</a>
-</nav>
+<article class="oldspeedlast-blog-essay">
+  <div class="oldspeedlast-blog-essay-topbar">
+    <a class="oldspeedlast-blog-essay-back" href="{{ '/blog/' | relative_url }}">返回博客</a>
+    <div class="oldspeedlast-blog-essay-actions">
+      <time class="oldspeedlast-blog-essay-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y年%-m月%-d日' }}</time>
+      <nav class="oldspeedlast-blog-language" aria-label="文章语言">
+        <a href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/' | relative_url }}" hreflang="en">English</a>
+        <a class="active" href="{{ '/blog/when-intelligence-moves-from-weights-to-runtime/zh/' | relative_url }}" hreflang="zh-CN" aria-current="page">中文</a>
+      </nav>
+    </div>
+  </div>
 
-<div class="post-language post-language-zh" lang="zh-CN">
+  <header class="oldspeedlast-blog-essay-header">
+    <h1 class="oldspeedlast-blog-essay-title">{{ page.title }}</h1>
+    <p class="oldspeedlast-blog-essay-author">Luyi Lin</p>
+    <p class="oldspeedlast-blog-essay-contact">luyilin@bjtu.edu.cn</p>
+  </header>
+
+<div class="oldspeedlast-blog-essay-content post-language post-language-zh" lang="zh-CN">
 
 这篇文章主要讨论 Agent，并提供一些或许并不那么新的视角。
 
@@ -125,3 +138,4 @@ Reasoning 是通过轨迹展开的。轨迹发生在交互之中。
 我直觉上认为，感知的第一性会建立起更完整的智能。世界不只是被表示的，它也是在交互中被“发生”的。是的，我是在说，世界会通过交互建立起它自己。
 
 </div>
+</article>

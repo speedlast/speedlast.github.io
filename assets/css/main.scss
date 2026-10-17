@@ -99,94 +99,272 @@ h6 {
   font-weight: 700;
 }
 
-.language-switch {
-  display: inline-flex;
-  gap: 0.2rem;
-  margin: 0 0 1.75rem;
-  padding: 0.2rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 999px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 0.82rem;
-  line-height: 1;
-
-  a {
-    padding: 0.45rem 0.7rem;
-    border-radius: 999px;
-    color: var(--global-text-color-light);
-    text-decoration: none;
-  }
-
-  a:hover,
-  a:focus-visible {
-    background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
-    color: var(--global-theme-color);
-  }
-
-  a.active {
-    background: var(--global-theme-color);
-    color: var(--global-hover-text-color);
-    font-weight: 650;
-  }
+/* Blog listing and essay pages retain oldspeedlast's original editorial structure. */
+body:has(.oldspeedlast-blog-essay) .post-header,
+body:has(.oldspeedlast-blog) .post-header {
+  display: none;
 }
 
-.post-language {
-  max-width: 46rem;
+.oldspeedlast-blog-posts {
+  margin-bottom: 10px;
+}
+
+.oldspeedlast-blog-archive-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid var(--old-line);
+}
+
+.oldspeedlast-blog-archive-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 24px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--old-line);
+}
+
+.oldspeedlast-blog-archive-title {
+  color: var(--old-heading);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.35;
+  transition: color var(--old-transition), opacity var(--old-transition);
+}
+
+.oldspeedlast-blog-archive-title:hover,
+.oldspeedlast-blog-archive-title:focus-visible {
+  color: var(--old-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.oldspeedlast-blog-archive-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--old-copy);
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.oldspeedlast-blog-archive-meta span {
+  color: var(--old-accent);
+}
+
+.oldspeedlast-blog-archive-description {
+  grid-column: 1 / -1;
+  max-width: 620px;
+  color: var(--old-copy);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.oldspeedlast-blog-essay {
+  width: min(100%, 960px);
+  min-width: 0;
+  margin: 1.5rem auto 2.5rem;
   color: var(--global-text-color);
-  font-size: clamp(1rem, 0.97rem + 0.15vw, 1.08rem);
-  line-height: 1.86;
-  text-wrap: pretty;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.oldspeedlast-blog-essay-topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: clamp(18px, 4vw, 36px);
+}
+
+.oldspeedlast-blog-essay-back {
+  display: inline-flex;
+  padding: 8px 13px;
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  border-radius: 4px;
+  font-size: clamp(18px, 2vw, 27px);
+  line-height: 1.1;
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+
+.oldspeedlast-blog-essay-back:hover,
+.oldspeedlast-blog-essay-back:focus-visible {
+  color: var(--global-text-color);
+  opacity: 0.65;
+}
+
+.oldspeedlast-blog-essay-actions {
+  display: grid;
+  justify-items: end;
+  gap: 12px;
+}
+
+.oldspeedlast-blog-essay-date {
+  color: var(--global-text-color);
+  font-size: clamp(17px, 2vw, 27px);
+  line-height: 1.25;
+  text-align: right;
+}
+
+.oldspeedlast-blog-language {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.oldspeedlast-blog-language a {
+  padding: 8px 10px;
+  color: var(--global-text-color-light);
+  text-decoration: none;
+}
+
+.oldspeedlast-blog-language a + a {
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.oldspeedlast-blog-language a:hover,
+.oldspeedlast-blog-language a:focus-visible {
+  color: var(--global-theme-color);
+}
+
+.oldspeedlast-blog-language a.active {
+  color: var(--global-hover-text-color);
+  background: var(--global-theme-color);
+}
+
+.oldspeedlast-blog-essay-header {
+  margin-bottom: clamp(34px, 5vw, 54px);
+  text-align: center;
+}
+
+.oldspeedlast-blog-essay-title {
+  max-width: 960px;
+  margin: 0 auto 24px;
+  color: var(--global-text-color);
+  font-size: clamp(32px, 3.8vw, 46px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.oldspeedlast-blog-essay-author {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.2;
+}
+
+.oldspeedlast-blog-essay-contact {
+  margin: 12px 0 0;
+  color: var(--global-text-color-light);
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.oldspeedlast-blog-essay-content {
+  max-width: 760px;
+  margin: 0 auto;
+  color: var(--global-text-color);
+  font-size: clamp(18px, 1.8vw, 21px);
+  line-height: 1.7;
 
   > :first-child {
     margin-top: 0;
   }
 
   p {
-    margin: 0 0 1.35rem;
+    margin: 0 0 1.25em;
+  }
+
+  &.post-language-en p:not(:has(> em:only-child)) {
+    margin-bottom: 0.35em;
+  }
+
+  &.post-language-en p:has(> em:only-child),
+  &.post-language-en :is(ol, ul):has(> li > em:only-child) {
+    color: color-mix(in srgb, var(--global-text-color) 76%, var(--global-bg-color));
+  }
+
+  &.post-language-en :is(p, li):has(> em:only-child) > em {
+    font-style: normal;
+  }
+
+  :is(ol, ul) {
+    margin: 0 0 1.25em 1.35em;
+    padding: 0;
+  }
+
+  li {
+    display: list-item;
+    margin-bottom: 0.45em;
   }
 
   h2,
   h3 {
-    color: var(--global-theme-color);
-    font-family: "Poppins", system-ui, sans-serif;
-    font-weight: 600;
-    letter-spacing: -0.025em;
+    margin: 2.2em 0 0.8em;
+    color: var(--global-text-color);
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.25;
   }
 
   h2 {
-    margin: 3.25rem 0 1.1rem;
-    padding-bottom: 0.55rem;
-    border-bottom: 1px solid var(--global-divider-color);
-    font-size: clamp(1.45rem, 1.25rem + 0.8vw, 1.9rem);
+    font-size: clamp(25px, 2.6vw, 32px);
+  }
+
+  h2:first-of-type {
+    margin-top: 1.8em;
   }
 
   h3 {
-    margin: 2.4rem 0 0.8rem;
-    font-size: clamp(1.15rem, 1.05rem + 0.45vw, 1.4rem);
+    font-size: clamp(22px, 2.2vw, 27px);
   }
 
-  :is(ul, ol) {
-    margin: 0 0 1.45rem;
-    padding-left: 1.45rem;
-  }
-
-  li + li {
-    margin-top: 0.5rem;
+  a {
+    display: inline;
+    color: var(--global-text-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 
   blockquote {
-    margin: 1.8rem 0;
-    padding: 0.15rem 0 0.15rem 1.2rem;
-    border-left: 3px solid var(--global-theme-color);
+    margin: 1.7em 0;
+    padding-left: 22px;
     color: var(--global-text-color-light);
-    font-size: 1.04em;
+    border-left: 2px solid var(--global-text-color);
+    font-style: italic;
   }
 
   code {
-    padding: 0.1em 0.32em;
-    border-radius: 0.25rem;
-    background: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    padding: 0.08em 0.28em;
     color: var(--global-text-color);
+    background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-bg-color));
+    border: 1px solid var(--global-divider-color);
+    border-radius: 3px;
+    font-family: "Courier New", monospace;
+    font-size: 0.88em;
+  }
+
+  pre {
+    margin: 1.6em 0;
+    padding: 18px;
+    overflow-x: auto;
+    background: color-mix(in srgb, var(--global-theme-color) 9%, var(--global-bg-color));
+    border: 1px solid var(--global-divider-color);
+    border-radius: 3px;
+  }
+
+  pre code {
+    padding: 0;
+    background: transparent;
+    border: 0;
   }
 }
 
@@ -196,27 +374,32 @@ h6 {
   line-break: strict;
 }
 
-.post-language-en {
-  font-family: Georgia, "Times New Roman", serif;
-
-  > p:has(> em:only-child),
-  > :is(ol, ul):has(> li > em:only-child) {
-    display: none;
+@media (max-width: 700px) {
+  .oldspeedlast-blog-archive-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
-}
 
-@media (max-width: 576px) {
-  .post-language {
-    font-size: 1rem;
-    line-height: 1.8;
+  .oldspeedlast-blog-archive-meta {
+    order: -1;
+    font-size: 11px;
+  }
 
-    h2 {
-      margin-top: 2.7rem;
-    }
+  .oldspeedlast-blog-essay-topbar {
+    flex-direction: column;
+    gap: 14px;
+  }
 
-    :is(ul, ol) {
-      padding-left: 1.2rem;
-    }
+  .oldspeedlast-blog-essay-actions {
+    justify-items: start;
+  }
+
+  .oldspeedlast-blog-essay-date {
+    text-align: left;
+  }
+
+  .oldspeedlast-blog-essay-title {
+    font-size: clamp(30px, 9vw, 42px);
   }
 }
 
