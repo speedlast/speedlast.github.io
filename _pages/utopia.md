@@ -9,13 +9,17 @@ nav_order: 5
 
 _Words / Thoughts / Cinema_
 
+<div class="oldspeedlast-page oldspeedlast-utopia" markdown="1">
+
 ## A repo for stories, doubts, critiques, and imagination
 
 Utopia is where I place my literary pieces and reflection notes. From here on, I solemnly swear that I am up to no AI.
 
-- [Literary Shorts]({{ '/utopia/literary_shorts/' | relative_url }})
-- [World Notes]({{ '/utopia/world_notes/' | relative_url }})
-- [Cinema Review]({{ '/utopia/cinema_review/' | relative_url }})
+<div class="utopia-card-grid">
+  <a class="utopia-card" href="{{ '/utopia/literary_shorts/' | relative_url }}"><span class="utopia-card-icon">✦</span><span>Literary Shorts</span></a>
+  <a class="utopia-card" href="{{ '/utopia/world_notes/' | relative_url }}"><span class="utopia-card-icon">⌁</span><span>World Notes</span></a>
+  <a class="utopia-card" href="{{ '/utopia/cinema_review/' | relative_url }}"><span class="utopia-card-icon">◌</span><span>Cinema Review</span></a>
+</div>
 
 ## The last five films I watched
 
@@ -74,3 +78,5 @@ Directed by Hayao Miyazaki.
 > No matter how many weapons you have, no matter how great your technology might be, the world cannot live without love.
 
 > Utopia is not a perfect place; it is a reminder of traversing the fantasy.
+
+</div>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">SLAI</title>
+  <desc id="desc">A blue SLAI wordmark inside a rounded square</desc>
+  <rect width="64" height="64" rx="16" fill="#2f6f9f"/>
+  <path d="M16 20h32v7H23v4h25v13H16v-7h25v-4H16z" fill="#fffdf8"/>
+  <circle cx="18.5" cy="17" r="3.5" fill="#b45309"/>
+</svg>
