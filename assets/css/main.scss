@@ -298,11 +298,27 @@ blockquote {
   text-transform: capitalize;
 }
 
-/* Small, branded affiliation mark for the SLAI entry. */
-.slai-link img {
-  width: 1.05em;
-  height: 1.05em;
-  border-radius: 0.28em;
+/* Crop the official CUHK(SZ) lockup to its crest when it appears inline. */
+.cuhksz-link {
+  gap: 0.32em;
+}
+
+.cuhksz-mark {
+  position: relative;
+  display: inline-block;
+  width: 1.58em;
+  height: 1.34em;
+  overflow: hidden;
+  vertical-align: -0.22em;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8.05em;
+    max-width: none;
+    height: auto;
+  }
 }
 
 /* Oldspeedlast-inspired page language: editorial headings, hairlines, and flat cards. */
@@ -569,5 +585,512 @@ blockquote {
     width: 220px;
     max-width: 72%;
     margin: 0 auto 1.5rem;
+  }
+}
+
+/*
+ * The three pages below deliberately retain oldspeedlast's original component
+ * hierarchy.  Only the color tokens map to this site's current palette.
+ */
+body:has(.oldspeedlast-panel) .post-header {
+  display: none;
+}
+
+.oldspeedlast-panel {
+  --old-surface: var(--global-card-bg-color);
+  --old-surface-deep: color-mix(in srgb, var(--global-card-bg-color) 84%, var(--global-bg-color));
+  --old-line: color-mix(in srgb, var(--global-text-color) 18%, transparent);
+  --old-heading: var(--global-text-color);
+  --old-copy: var(--global-text-color-light);
+  --old-accent: var(--global-theme-color);
+  --old-accent-soft: color-mix(in srgb, var(--global-theme-color) 16%, var(--global-bg-color));
+  --old-shadow-1: -4px 8px 24px color-mix(in srgb, var(--global-text-color) 13%, transparent);
+  --old-shadow-2: 0 16px 30px color-mix(in srgb, var(--global-text-color) 13%, transparent);
+  --old-transition: 0.25s ease;
+  max-width: 950px;
+  margin: 1.5rem auto 2.5rem;
+  padding: 15px;
+  overflow: hidden;
+  color: var(--old-copy);
+  background: var(--old-surface-deep);
+  border: 1px solid var(--old-line);
+  border-radius: 20px;
+  box-shadow: var(--old-shadow-1);
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :is(h2, h3, h4, h5, p, ol, ul) {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  :is(h2, h3, h4, h5) {
+    color: var(--old-heading);
+    font-family: inherit;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.oldspeedlast-title {
+  position: relative;
+  margin-bottom: 30px !important;
+  padding-bottom: 7px !important;
+  color: var(--old-heading);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.oldspeedlast-title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(to right, var(--old-accent), color-mix(in srgb, var(--old-accent) 55%, #b45309));
+  content: "";
+}
+
+.oldspeedlast-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.oldspeedlast-title-wrapper h3,
+.oldspeedlast-skill > h3 {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.oldspeedlast-icon-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  color: var(--old-accent);
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--old-heading) 20%, transparent), transparent), var(--old-surface);
+  border: 1px solid var(--old-line);
+  border-radius: 8px;
+  box-shadow: var(--old-shadow-1);
+  font-size: 16px;
+}
+
+.oldspeedlast-timeline,
+.oldspeedlast-publications {
+  margin-bottom: 30px;
+}
+
+.oldspeedlast-timeline-list {
+  margin-left: 45px !important;
+  font-size: 14px;
+}
+
+.oldspeedlast-timeline-item {
+  position: relative;
+}
+
+.oldspeedlast-timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.oldspeedlast-timeline-item h4 {
+  margin-bottom: 7px !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.oldspeedlast-timeline-item span {
+  display: block;
+  color: var(--old-accent);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.oldspeedlast-timeline-item p {
+  color: var(--old-copy);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.oldspeedlast-timeline-item:not(:last-child)::before {
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--old-line);
+  content: "";
+}
+
+.oldspeedlast-timeline-item::after {
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--old-accent);
+  box-shadow: 0 0 0 4px var(--old-surface-deep);
+  content: "";
+}
+
+.oldspeedlast-publications > ul {
+  margin-left: 45px !important;
+  padding-left: 1.25em !important;
+  color: var(--old-copy);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.oldspeedlast-publications li {
+  display: list-item;
+  margin-bottom: 14px;
+  list-style: disc;
+}
+
+.oldspeedlast-publications cite {
+  color: var(--old-heading);
+  font-style: italic;
+}
+
+.oldspeedlast-publications strong {
+  color: var(--old-accent);
+  font-weight: 600;
+}
+
+.oldspeedlast-filter-list {
+  display: none;
+}
+
+.oldspeedlast-filter-select-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.oldspeedlast-filter-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 16px;
+  color: var(--old-copy);
+  background: var(--old-surface);
+  border: 1px solid var(--old-line);
+  border-radius: 14px;
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+}
+
+.oldspeedlast-project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  min-height: 10px;
+  margin-bottom: 10px !important;
+}
+
+.oldspeedlast-utopia-hero {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 26px;
+  padding: 24px;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--old-heading) 19%, transparent), transparent 55%), var(--old-surface-deep);
+  border: 1px solid var(--old-line);
+  border-radius: 16px;
+  box-shadow: var(--old-shadow-2);
+}
+
+.oldspeedlast-utopia-eyebrow {
+  margin-bottom: 10px !important;
+  color: var(--old-accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.oldspeedlast-utopia-hero h3 {
+  margin-bottom: 12px !important;
+  color: var(--old-heading);
+  font-size: 17px;
+  line-height: 1.25;
+}
+
+.oldspeedlast-utopia-hero > p:last-child {
+  color: var(--old-heading);
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.78;
+}
+
+.oldspeedlast-utopia-topics {
+  margin: 8px 0;
+}
+
+.oldspeedlast-utopia-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 24px !important;
+}
+
+.oldspeedlast-utopia-grid > li {
+  min-height: 138px;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--old-heading) 19%, transparent), transparent 55%), var(--old-surface-deep);
+  border: 1px solid var(--old-line);
+  border-radius: 14px;
+  box-shadow: var(--old-shadow-2);
+  transition: box-shadow var(--old-transition);
+}
+
+.oldspeedlast-utopia-grid > li:hover {
+  box-shadow: var(--old-shadow-2), 0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
+}
+
+.oldspeedlast-utopia-grid a {
+  display: grid;
+  min-height: 138px;
+  place-items: center;
+  gap: 8px;
+  padding: 26px;
+  color: var(--old-accent);
+  border-radius: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  line-height: 1.45;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.oldspeedlast-utopia-grid a:hover,
+.oldspeedlast-utopia-grid a:focus-visible {
+  color: var(--global-highlight-color);
+}
+
+.oldspeedlast-utopia-card-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--old-accent);
+  font-size: 22px;
+}
+
+.oldspeedlast-skill {
+  margin-bottom: 0;
+}
+
+.oldspeedlast-skill > h3 {
+  margin-bottom: 20px !important;
+}
+
+.oldspeedlast-content-card {
+  position: relative;
+  z-index: 1;
+  padding: 22px 15px !important;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, color-mix(in srgb, var(--old-heading) 19%, transparent), transparent 55%), var(--old-surface-deep);
+  border: 1px solid var(--old-line);
+  border-radius: 14px;
+  box-shadow: var(--old-shadow-2);
+  transition: box-shadow var(--old-transition);
+}
+
+.oldspeedlast-content-card:hover {
+  box-shadow: var(--old-shadow-2), 0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
+}
+
+.oldspeedlast-content-card li:not(:last-child) {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--old-line);
+}
+
+.oldspeedlast-content-card h5 {
+  margin-bottom: 4px !important;
+  color: var(--old-heading);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  text-transform: none;
+}
+
+.oldspeedlast-film-score {
+  margin-bottom: 7px !important;
+  color: var(--old-accent);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+  opacity: 0.72;
+}
+
+.oldspeedlast-film-director {
+  margin-bottom: 7px !important;
+  color: var(--old-heading);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.35;
+  opacity: 0.86;
+}
+
+.oldspeedlast-film-note {
+  color: var(--old-copy);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.65;
+  opacity: 0.72;
+}
+
+.oldspeedlast-film-note + .oldspeedlast-film-note {
+  margin-top: 8px !important;
+}
+
+.oldspeedlast-film-canon {
+  margin-top: 28px;
+}
+
+.oldspeedlast-utopia-quote {
+  margin-top: 32px;
+  padding-left: 16px;
+  border-left: 2px solid var(--old-accent);
+}
+
+.oldspeedlast-utopia-quote blockquote {
+  margin: 0;
+  padding: 0;
+  color: var(--old-copy);
+  background: transparent;
+  border: 0;
+  font-family: inherit;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+@media (min-width: 580px) {
+  .oldspeedlast-panel {
+    padding: 30px;
+  }
+
+  .oldspeedlast-title {
+    padding-bottom: 15px !important;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .oldspeedlast-title::after {
+    width: 40px;
+    height: 5px;
+  }
+
+  .oldspeedlast-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .oldspeedlast-timeline-list,
+  .oldspeedlast-publications > ul {
+    margin-left: 65px !important;
+  }
+
+  .oldspeedlast-timeline-item:not(:last-child)::before {
+    left: -40px;
+  }
+
+  .oldspeedlast-timeline-item::after {
+    left: -43px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .oldspeedlast-utopia-hero {
+    padding: 30px;
+  }
+
+  .oldspeedlast-content-card {
+    padding: 22px 30px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .oldspeedlast-filter-select-box {
+    display: none;
+  }
+
+  .oldspeedlast-filter-list {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px !important;
+    padding-left: 5px !important;
+  }
+
+  .oldspeedlast-filter-list button {
+    padding: 0;
+    color: var(--old-copy);
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 300;
+    transition: color var(--old-transition);
+  }
+
+  .oldspeedlast-filter-list button:hover {
+    color: color-mix(in srgb, var(--old-copy) 70%, transparent);
+  }
+
+  .oldspeedlast-filter-list button.active {
+    color: var(--old-accent);
+  }
+
+  .oldspeedlast-utopia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .oldspeedlast-utopia-grid > li:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .oldspeedlast-utopia-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .oldspeedlast-utopia-grid > li:first-child {
+    grid-column: auto;
   }
 }
