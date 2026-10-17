@@ -21,7 +21,7 @@ profile:
       <span class="profile-wechat" tabindex="0" role="img" aria-label="WeChat: to_the_ride_or_die" data-tooltip="WeChat: to_the_ride_or_die"><i class="fa-brands fa-weixin" aria-hidden="true"></i></span>
     </div>
 
-selected_papers: true
+selected_papers: false
 social: false
 
 announcements:
@@ -51,7 +51,13 @@ Beyond research and work, I cherish **individual independence and dignity**, and
 
 Life is too short to be ordinary, yet for most people, survival itself is a lifelong struggle.
 
-## Interests
+## Selected Publications
+
+<div class="publications">
+{% bibliography --query @*[selected=true] %}
+</div>
+
+## Other Interests
 
 I love **football** (mostly watching, though I've been trying to play a little myself).
 
