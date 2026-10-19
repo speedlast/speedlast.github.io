@@ -19,6 +19,7 @@ profile:
       <a href="https://github.com/speedlast" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
       <a href="/feed.xml" aria-label="RSS feed" title="RSS feed"><i class="fa-solid fa-rss" aria-hidden="true"></i></a>
       <span class="profile-wechat" tabindex="0" role="img" aria-label="WeChat: to_the_ride_or_die" data-tooltip="WeChat: to_the_ride_or_die"><i class="fa-brands fa-weixin" aria-hidden="true"></i></span>
+      <a href="https://x.com/luyi_lin52299" aria-label="X (Twitter)" title="X (Twitter)"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
     </div>
 
 selected_papers: false
