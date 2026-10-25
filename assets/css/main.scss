@@ -6,7 +6,7 @@
 @use "sass:string";
 
 @use "variables" with (
-  $max-content-width: {{ site.max_width | default: "1080px" }}
+  $max-content-width: {{site.max_width | default: "1080px"}}
 );
 @use "themes";
 @use "layout";
@@ -235,7 +235,9 @@ body:has(.oldspeedlast-blog) .post-header {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.35;
-  transition: color var(--old-transition), opacity var(--old-transition);
+  transition:
+    color var(--old-transition),
+    opacity var(--old-transition);
 }
 
 .oldspeedlast-blog-archive-title:hover,
@@ -328,7 +330,12 @@ body:has(.oldspeedlast-blog) .post-header {
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
   border-radius: 4px;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 12px;
   line-height: 1;
 }
@@ -401,7 +408,12 @@ body:has(.oldspeedlast-blog) .post-header {
   overflow-y: auto;
   padding: 3px 0 3px 17px;
   border-left: 1px solid var(--global-divider-color);
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
 .oldspeedlast-blog-toc-label {
@@ -557,7 +569,12 @@ body:has(.oldspeedlast-blog) .post-header {
 .world-cup-notes-kicker {
   margin: 0 0 12px;
   color: var(--global-theme-color);
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -594,7 +611,12 @@ body:has(.oldspeedlast-blog) .post-header {
   figcaption {
     margin-top: 0.65rem;
     color: var(--global-text-color-light);
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family:
+      "Poppins",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      sans-serif;
     font-size: 12px;
     text-align: center;
   }
@@ -768,7 +790,9 @@ blockquote {
     border-radius: 50%;
     color: inherit;
     cursor: pointer;
-    transition: color 160ms ease, background-color 160ms ease;
+    transition:
+      color 160ms ease,
+      background-color 160ms ease;
   }
 
   a:hover,
@@ -798,7 +822,9 @@ blockquote {
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, 0.25rem);
-  transition: opacity 160ms ease, transform 160ms ease;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
 }
 
 .profile-wechat:hover::after,
@@ -1047,7 +1073,10 @@ blockquote {
     font-size: 0.9rem;
     font-weight: 650;
     text-decoration: none;
-    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    transition:
+      border-color 160ms ease,
+      box-shadow 160ms ease,
+      transform 160ms ease;
   }
 
   .utopia-card:hover,
@@ -1151,7 +1180,12 @@ body:has(.oldspeedlast-panel) .post-header {
   border: 1px solid var(--old-line);
   border-radius: 20px;
   box-shadow: var(--old-shadow-1);
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.6;
@@ -1408,7 +1442,9 @@ body:has(.oldspeedlast-panel) .post-header {
 }
 
 .oldspeedlast-utopia-grid > li:hover {
-  box-shadow: var(--old-shadow-2), 0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
+  box-shadow:
+    var(--old-shadow-2),
+    0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
 }
 
 .oldspeedlast-utopia-grid a {
@@ -1462,7 +1498,9 @@ body:has(.oldspeedlast-panel) .post-header {
 }
 
 .oldspeedlast-content-card:hover {
-  box-shadow: var(--old-shadow-2), 0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
+  box-shadow:
+    var(--old-shadow-2),
+    0 0 34px color-mix(in srgb, var(--old-accent) 15%, transparent);
 }
 
 .oldspeedlast-content-card li:not(:last-child) {
