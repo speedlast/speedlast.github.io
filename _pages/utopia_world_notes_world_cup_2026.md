@@ -47,52 +47,52 @@ nav: false
       </section>
 
       <section class="world-cup-moment" id="moment-2">
-        <h2>02 <span>佛得角 vs Argentina｜世界波</span></h2>
+        <h2>02 <span>佛得角 vs 阿根廷｜世界波</span></h2>
         <p>世界杯最佳进球。小岛的奇迹，坠入世界之巅。</p>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/02.png' | relative_url }}" alt="佛得角对阵阿根廷的世界波瞬间" loading="lazy" decoding="async">
-          <figcaption>02 · 佛得角 vs Argentina</figcaption>
+          <figcaption>02 · 佛得角 vs 阿根廷</figcaption>
         </figure>
       </section>
 
       <section class="world-cup-moment" id="moment-3">
-        <h2>03 <span>Spain vs France｜Tiki-taka</span></h2>
-        <blockquote><p>“they're literally playing like prime Barce 2009”</p></blockquote>
+        <h2>03 <span>Spain vs 法国｜Tiki-taka</span></h2>
+        <blockquote><p>“They're literally playing like Barça did at its peak in 2009.”</p></blockquote>
         <figure class="world-cup-media">
-          <img src="{{ '/assets/img/world-cup-2026/03.jpg' | relative_url }}" alt="西班牙对阵法国的 Tiki-taka 瞬间" loading="lazy" decoding="async">
-          <figcaption>03 · Spain vs France</figcaption>
+          <img src="{{ '/assets/img/world-cup-2026/03.jpg' | relative_url }}" alt="Spain 对阵法国的 Tiki-taka 瞬间" loading="lazy" decoding="async">
+          <figcaption>03 · Spain vs 法国</figcaption>
         </figure>
       </section>
 
       <section class="world-cup-moment" id="moment-4">
-        <h2>04 <span>Argentina vs 埃及｜正义与争议</span></h2>
+        <h2>04 <span>阿根廷 vs 埃及｜正义与争议</span></h2>
         <p>正义与争议，都是人生的一部分。</p>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/04.jpg' | relative_url }}" alt="阿根廷对阵埃及的比赛瞬间" loading="lazy" decoding="async">
-          <figcaption>04 · Argentina vs 埃及</figcaption>
+          <figcaption>04 · 阿根廷 vs 埃及</figcaption>
         </figure>
       </section>
 
       <section class="world-cup-moment" id="moment-5">
-        <h2>05 <span>苏格兰 vs Brazil｜内马尔归来</span></h2>
+        <h2>05 <span>苏格兰 vs 巴西｜内马尔归来</span></h2>
         <p>他走向看台的那一瞬间，掌声如雷。</p>
         <p>如果2026是传奇们的最后一舞，那我最希望拿到大力神杯的是他。</p>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/05.jpg' | relative_url }}" alt="苏格兰对阵巴西，内马尔归来的瞬间" loading="lazy" decoding="async">
-          <figcaption>05 · 苏格兰 vs Brazil</figcaption>
+          <figcaption>05 · 苏格兰 vs 巴西</figcaption>
         </figure>
       </section>
 
       <section class="world-cup-moment" id="moment-6">
-        <h2>06 <span>Brazil vs Norway｜内马尔最后一舞</span></h2>
+        <h2>06 <span>巴西 vs 挪威｜内马尔最后一舞</span></h2>
         <p>点球入网，终场哨响。未曾加冕的王子，终究告别了桑巴。</p>
         <blockquote>
-          <p>“the prince that never becomes a king”</p>
-          <p>“you love brazil bcz of their trophies right?” “what trophies?”</p>
+          <p>“He was the prince who never became king.”</p>
+          <p>“You love Brazil because of its trophies, right?” “What trophies?”</p>
         </blockquote>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/06.jpg' | relative_url }}" alt="巴西对阵挪威，内马尔最后一舞的瞬间" loading="lazy" decoding="async">
-          <figcaption>06 · Brazil vs Norway</figcaption>
+          <figcaption>06 · 巴西 vs 挪威</figcaption>
         </figure>
       </section>
 
@@ -100,7 +100,7 @@ nav: false
         <h2>07 <span>葡萄牙 vs Spain｜C罗最后一舞</span></h2>
         <p>亚马尔轻扶他的肩膀。少年与传奇，就这样站在时光的两端。</p>
         <figure class="world-cup-media">
-          <img src="{{ '/assets/img/world-cup-2026/07.jpg' | relative_url }}" alt="葡萄牙对阵西班牙，C罗最后一舞的瞬间" loading="lazy" decoding="async">
+          <img src="{{ '/assets/img/world-cup-2026/07.jpg' | relative_url }}" alt="葡萄牙对阵 Spain，C罗最后一舞的瞬间" loading="lazy" decoding="async">
           <figcaption>07 · 葡萄牙 vs Spain</figcaption>
         </figure>
       </section>
@@ -118,17 +118,17 @@ nav: false
         <h2>09 <span>Spain vs 佛得角｜一生所候的巨浪</span></h2>
         <p>人潮汹涌，声浪一层层漫过看台。“那是我等待了一生的巨浪。”</p>
         <figure class="world-cup-media">
-          <img src="{{ '/assets/img/world-cup-2026/09.jpg' | relative_url }}" alt="西班牙对阵佛得角，看台上人潮汹涌的瞬间" loading="lazy" decoding="async">
+          <img src="{{ '/assets/img/world-cup-2026/09.jpg' | relative_url }}" alt="Spain 对阵佛得角，看台上人潮汹涌的瞬间" loading="lazy" decoding="async">
           <figcaption>09 · Spain vs 佛得角</figcaption>
         </figure>
       </section>
 
       <section class="world-cup-moment" id="moment-10">
-        <h2>10 <span>Germany vs Ecuador｜厄瓜多尔的奇迹</span></h2>
+        <h2>10 <span>德国 vs 厄瓜多尔｜厄瓜多尔的奇迹</span></h2>
         <blockquote><p>“New Jersey echoes to the sound of Ecuador! Today, they were required, to beat the four time champions of the world!”</p></blockquote>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/10.jpg' | relative_url }}" alt="德国对阵厄瓜多尔的比赛瞬间" loading="lazy" decoding="async">
-          <figcaption>10 · Germany vs Ecuador</figcaption>
+          <figcaption>10 · 德国 vs 厄瓜多尔</figcaption>
         </figure>
       </section>
     </div>
