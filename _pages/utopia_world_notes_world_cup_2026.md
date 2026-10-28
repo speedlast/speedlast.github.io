@@ -57,7 +57,7 @@ nav: false
 
       <section class="world-cup-moment" id="moment-3">
         <h2>03 <span>Spain vs 法国｜Tiki-taka</span></h2>
-        <blockquote><p>“They're literally playing like Barça did at its peak in 2009.”</p></blockquote>
+        <blockquote><p>“They're literally playing like prime Barça 2009.”</p></blockquote>
         <figure class="world-cup-media">
           <img src="{{ '/assets/img/world-cup-2026/03.jpg' | relative_url }}" alt="Spain 对阵法国的 Tiki-taka 瞬间" loading="lazy" decoding="async">
           <figcaption>03 · Spain vs 法国</figcaption>
@@ -87,7 +87,7 @@ nav: false
         <h2>06 <span>巴西 vs 挪威｜内马尔最后一舞</span></h2>
         <p>点球入网，终场哨响。未曾加冕的王子，终究告别了桑巴。</p>
         <blockquote>
-          <p>“He was the prince who never became king.”</p>
+          <p>“The prince who never became a king.”</p>
           <p>“You love Brazil because of its trophies, right?” “What trophies?”</p>
         </blockquote>
         <figure class="world-cup-media">
