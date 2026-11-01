@@ -406,21 +406,25 @@ body:has(.oldspeedlast-blog) .post-header {
   gap: 56px;
 }
 
-.oldspeedlast-literary-essay .oldspeedlast-blog-essay-header {
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-header,
+.oldspeedlast-cinema-essay .oldspeedlast-blog-essay-header {
   padding-left: 0;
 }
 
-.oldspeedlast-literary-essay .oldspeedlast-blog-essay-body {
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-body,
+.oldspeedlast-cinema-essay .oldspeedlast-blog-essay-body {
   display: block;
 }
 
 .oldspeedlast-literary-essay .oldspeedlast-blog-essay-content,
+.oldspeedlast-cinema-essay .oldspeedlast-blog-essay-content,
 .oldspeedlast-literary-essay-footer {
   width: min(100%, 720px);
   margin-inline: auto;
 }
 
-.oldspeedlast-literary-essay .oldspeedlast-blog-essay-content {
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-content,
+.oldspeedlast-cinema-essay .oldspeedlast-blog-essay-content {
   text-align: left;
 }
 
