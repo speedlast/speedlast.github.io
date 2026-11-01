@@ -19,6 +19,11 @@ nav: false
         <p class="oldspeedlast-blog-archive-description" lang="zh-CN">我并不知道人与人之间的缘分是一种很浅薄的东西。</p>
       </li>
       <li class="oldspeedlast-blog-archive-item">
+        <a class="oldspeedlast-blog-archive-title" href="{{ '/utopia/literary_shorts/the-seas-suicide/' | relative_url }}" lang="zh-CN">海的自杀</a>
+        <div class="oldspeedlast-blog-archive-meta"><time datetime="2024-04">2024.4</time></div>
+        <p class="oldspeedlast-blog-archive-description" lang="zh-CN">海是重的</p>
+      </li>
+      <li class="oldspeedlast-blog-archive-item">
         <a class="oldspeedlast-blog-archive-title" href="{{ '/utopia/literary_shorts/illness-memories/' | relative_url }}" lang="zh-CN">病忆随记</a>
         <div class="oldspeedlast-blog-archive-meta"><time datetime="2022">2022</time></div>
         <p class="oldspeedlast-blog-archive-description" lang="zh-CN">关于那场病，我的记忆已经不多，只有些不知来历的诳语。</p>
