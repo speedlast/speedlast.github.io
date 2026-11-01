@@ -432,6 +432,14 @@ body:has(.oldspeedlast-blog) .post-header {
   text-indent: 2em;
 }
 
+.oldspeedlast-literary-poem .oldspeedlast-blog-essay-content {
+  text-align: center;
+}
+
+.oldspeedlast-literary-poem .oldspeedlast-blog-essay-content p {
+  text-indent: 0;
+}
+
 .oldspeedlast-literary-essay-footer {
   margin-top: 2rem;
   color: var(--global-text-color-light);

@@ -6,7 +6,7 @@ description: 海是重的
 nav: false
 ---
 
-<article class="oldspeedlast-blog-essay oldspeedlast-literary-essay" lang="zh-CN">
+<article class="oldspeedlast-blog-essay oldspeedlast-literary-essay oldspeedlast-literary-poem" lang="zh-CN">
   <div class="oldspeedlast-blog-essay-topbar">
     <a class="oldspeedlast-blog-essay-back" href="{{ '/utopia/literary_shorts/' | relative_url }}">返回 Literary Shorts</a>
   </div>
