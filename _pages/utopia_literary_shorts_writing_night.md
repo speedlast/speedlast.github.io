@@ -6,7 +6,7 @@ description: 我并不知道人与人之间的缘分是一种很浅薄的东西�
 nav: false
 ---
 
-<article class="oldspeedlast-blog-essay" lang="zh-CN">
+<article class="oldspeedlast-blog-essay oldspeedlast-literary-essay" lang="zh-CN">
   <div class="oldspeedlast-blog-essay-topbar">
     <a class="oldspeedlast-blog-essay-back" href="{{ '/utopia/literary_shorts/' | relative_url }}">返回 Literary Shorts</a>
   </div>
@@ -21,7 +21,7 @@ nav: false
 
       <p>心魂飘散在夜空里，四处寻找，无从指认，形成欲念的洋流。</p>
 
-      <p>梦境是真实的，我曾在梦里看见我与他重归于好，却又在清晨忘了这一切，空留一身疲惫。<br>当这一切无从指认的时候，当占用它们的名称、言语被空乏之后，这个世界终于显露出它最可怕的一面，这里有比虚无更糟糕的虚无，万物都在其所处的位置，但是没有了名号，一切如其所是，一切循环在一起，庞大的世界轰然临在你的身躯，随后，不可名状的苦痛就会袭来。</p>
+      <p>梦境是真实的，我曾在梦里看见我与他重归于好，却又在清晨忘了这一切，空留一身疲惫。当这一切无从指认的时候，当占用它们的名称、言语被空乏之后，这个世界终于显露出它最可怕的一面，这里有比虚无更糟糕的虚无，万物都在其所处的位置，但是没有了名号，一切如其所是，一切循环在一起，庞大的世界轰然临在你的身躯，随后，不可名状的苦痛就会袭来。</p>
 
       <p>我是俗世凡人，没有什么法力或者法器与这样的力量抗衡。如果这样，想必我会竭尽我的思绪，随后疯掉。</p>
 
@@ -31,6 +31,9 @@ nav: false
 
       <p>所以我告诉你，在我眼里的所谓文学，就是要为作家所看到的世界，找寻到一种不曾存在过的语言一种唯一的语言，去把这一切显现出来给世人看他们把这称为风格，造出一堆词语、体系去做阐释，妄图去虚构作家生发的逻辑，这是徒劳的。学术是为了死，写作不是为了死，恰是为了生，为了突破生的束缚而不惜召唤然后越过死的魂灵。</p>
     </div>
+    <footer class="oldspeedlast-literary-essay-footer">
+      <time datetime="2026-09-03">2026.9.3</time>
+    </footer>
 
   </div>
 </article>

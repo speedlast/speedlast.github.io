@@ -262,6 +262,11 @@ body:has(.oldspeedlast-blog) .post-header {
   color: var(--old-accent);
 }
 
+.oldspeedlast-literary-list .oldspeedlast-blog-archive-meta {
+  justify-content: flex-end;
+  text-align: right;
+}
+
 .oldspeedlast-blog-archive-description {
   grid-column: 1 / -1;
   max-width: 620px;
@@ -399,6 +404,39 @@ body:has(.oldspeedlast-blog) .post-header {
   justify-content: center;
   align-items: start;
   gap: 56px;
+}
+
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-header {
+  padding-left: 0;
+}
+
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-body {
+  display: block;
+}
+
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-content,
+.oldspeedlast-literary-essay-footer {
+  width: min(100%, 720px);
+  margin-inline: auto;
+}
+
+.oldspeedlast-literary-essay .oldspeedlast-blog-essay-content {
+  text-align: left;
+}
+
+.oldspeedlast-literary-essay-footer {
+  margin-top: 2rem;
+  color: var(--global-text-color-light);
+  font-size: 14px;
+  text-align: right;
+}
+
+.oldspeedlast-literary-essay-footer time {
+  display: block;
+}
+
+.oldspeedlast-literary-essay-footer p {
+  margin: 0.5rem 0 0;
 }
 
 .oldspeedlast-blog-toc {
@@ -657,9 +695,17 @@ body:has(.oldspeedlast-blog) .post-header {
     gap: 8px;
   }
 
+  .oldspeedlast-literary-list .oldspeedlast-blog-archive-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
   .oldspeedlast-blog-archive-meta {
     order: -1;
     font-size: 11px;
+  }
+
+  .oldspeedlast-literary-list .oldspeedlast-blog-archive-meta {
+    order: 0;
   }
 
   .oldspeedlast-blog-essay-topbar {
