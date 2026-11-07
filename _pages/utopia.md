@@ -29,10 +29,10 @@ nav_order: 5
   <section class="oldspeedlast-skill">
     <h3>The Last 5 Films I Watched</h3>
     <ul class="oldspeedlast-content-card">
+      <li><h5>La bola negra（黑球）</h5><p class="oldspeedlast-film-score">9.2 / 10.0</p></li>
       <li><h5>The Godfather（教父）</h5><p class="oldspeedlast-film-score">9.0 / 10.0</p></li>
       <li><h5>The Odyssey</h5><p class="oldspeedlast-film-score">10.0 / 10.0</p></li>
       <li><h5>Spider-Man: Brand New Day</h5><p class="oldspeedlast-film-score">8.0 / 10.0</p></li>
-      <li><h5>Memento（记忆碎片 重映）</h5><p class="oldspeedlast-film-score">8.7 / 10.0</p></li>
       <li><h5>给阿嬷的情书（Dear You）</h5><p class="oldspeedlast-film-score">9.0 / 10.0 (I'd like to give a 10.0)</p></li>
     </ul>
   </section>
