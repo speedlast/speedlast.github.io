@@ -20,15 +20,17 @@ description: Education, research experience, publications, and honors.
 
     <ol class="oldspeedlast-timeline-list">
       <li class="oldspeedlast-timeline-item">
-        <h4>Come Out Soon or Later</h4>
-        <span>2027.09 — ??? (expected)</span>
-        <p>Researching on ???.</p>
+        <h4>Ph.D. (Incoming)</h4>
+        <span>Expected start: 2027.09</span>
+        <p>CUHK-SZ, advised by <a href="https://tomluo123.github.io/">Prof. Zhi-Quan (Tom) Luo</a>.</p>
       </li>
       <li class="oldspeedlast-timeline-item">
-        <h4>BS in Data Science, Beijing Jiaotong University</h4>
+        <h4>B.S.</h4>
         <span>2023.09 — 2027.06 (expected)</span>
+        <p>School of Mathematics and Statistics, Beijing Jiaotong University</p>
       </li>
     </ol>
+
   </section>
 
   <section class="oldspeedlast-timeline">
@@ -51,6 +53,7 @@ description: Education, research experience, publications, and honors.
         <p>NLP, LLM</p>
       </li>
     </ol>
+
   </section>
 
   <section class="oldspeedlast-publications">
@@ -62,6 +65,7 @@ description: Education, research experience, publications, and honors.
     <ul>
       <li><cite>A law reasoning benchmark for llm with tree-organized structures including factum probandum, evidence and experiences.</cite> Jiaxin Shen, Huiqi Hu, <strong>Luyi Lin</strong>, Wenjuan Han and other 5 authors. In Findings of the Association for Computational Linguistics (ACL Findings), 2025.</li>
     </ul>
+
   </section>
 
   <section class="oldspeedlast-timeline">
@@ -82,5 +86,6 @@ description: Education, research experience, publications, and honors.
         <p>Awarded by the Chinese Association of Mathematics and Applied Mathematics.</p>
       </li>
     </ol>
+
   </section>
 </article>

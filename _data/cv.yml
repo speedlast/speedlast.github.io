@@ -15,22 +15,23 @@ cv:
 
   sections:
     Education:
+      - institution: CUHK-SZ
+        location: Shenzhen, China
+        area: ""
+        degree: Ph.D. (Incoming)
+        studyType: Ph.D.
+        start_date: "2027-09"
+        date: "Expected start: 2027.09"
+        summary: "Advised by [Prof. Zhi-Quan (Tom) Luo](https://tomluo123.github.io/)."
+
       - institution: Beijing Jiaotong University
         location: Beijing, China
-        area: Data Science
-        degree: BS
-        studyType: BS
+        area: School of Mathematics and Statistics
+        degree: B.S.
+        studyType: B.S.
         start_date: "2023-09"
         end_date: "2027-06"
         summary: Expected graduation in June 2027.
-
-      - institution: Come Out Soon or Later
-        location: ""
-        area: "Researching on ???"
-        degree: ""
-        studyType: ""
-        date: "2027.09 — ??? (expected)"
-        summary: "2027.09 — ??? (expected)"
 
     Experience:
       - company: PKU DAIR Lab
