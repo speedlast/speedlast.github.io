@@ -1,5 +1,5 @@
 name: Deploy site
-# Republish the site after restoring public GitHub Pages hosting.
+# Build and publish the site when its content changes.
 
 on:
   push:
